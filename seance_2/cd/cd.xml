@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CDS>
+    <CD>
+        <Titre>POE session</Titre>
+        <Interprete>Bussy</Interprete>
+        <Genre>Rock</Genre>
+        <Piste>
+            <Titre>Bright be the place</Titre>
+            <Compositeur>Lord Byron</Compositeur>
+            <Compositeur>Xavier Bussy</Compositeur>
+            <Compositeur>Fred Jaillard</Compositeur>   
+            <Duree>3:51</Duree>
+        </Piste>
+        <Piste>
+            <Titre>King Pest</Titre>
+            <Compositeur>E.Allan Poe</Compositeur>
+            <Compositeur>Xavier Bussy</Compositeur>
+            <Compositeur>Fred Jaillard</Compositeur>   
+            <Compositeur>Dominique Comont</Compositeur>   
+            <Duree>5:02</Duree>
+        </Piste>
+        <Pochette>
+            <Urlface>./bussyfront.gif</Urlface>
+        </Pochette>
+        <site>http://bussy.free.fr/</site>
+    </CD>
+
+    <CD>
+        <Titre>The book of lies</Titre>
+        <Interprete>Jack the Ripper</Interprete>
+        <Genre>Rock</Genre>
+        <Piste>
+            <Titre>Dog meets wolf</Titre>
+            <Compositeur>Jack the Ripper</Compositeur>
+            <Duree>4:44</Duree>
+        </Piste>
+        <Piste>
+            <Titre>Prayer in a Tango</Titre>
+            <Compositeur>Jack the Ripper</Compositeur>
+            <Duree>4:44</Duree>
+        </Piste>
+        <Pochette>
+            <Urlface>./jacktrfront.gif</Urlface>
+            <Urldos>./jacktrback.gif</Urldos>
+        </Pochette>
+        <site>http://jack.ripper.free.fr/</site>
+    </CD>
+
+    <CD>
+        <Titre>Hoarse</Titre>
+        <Interprete>16 Horsepower</Interprete>
+        <Genre>Rock/live</Genre>
+        <Piste>
+            <Titre>Amarican Wheeze</Titre>
+            <Compositeur>Edwards</Compositeur>
+            <Compositeur>16 Horsepower></Compositeur>
+            <Duree>3:33</Duree>
+        </Piste> 
+        <Piste>
+            <Titre>Black Soul Choir</Titre>
+            <Compositeur>Edwards</Compositeur>
+            <Compositeur>16 Horsepower</Compositeur>
+            <Duree>3:33</Duree>
+        </Piste>
+        <Pochette>
+            <Urlface>./horsepowerfront.gif</Urlface>
+        </Pochette>
+        <site>http://horsepower.free.fr/</site>
+    </CD>
+
+</CDS>

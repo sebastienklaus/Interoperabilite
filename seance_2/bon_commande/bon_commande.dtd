@@ -1,0 +1,27 @@
+<!-- Root element - ListeCommandes -->
+<!ELEMENT ListeCommandes (#PCDATA)>
+<!-- BonCommande Eelement -->
+<!ELEMENT BonCommande (Entreprise, Organisation, Date, Montant, Details)>
+<!ATTLIST BonCommande ID ID #REQUIRED>
+<!-- Elements for the company (sending) -->
+<!ELEMENT Entreprise (Nom, Adresse, Phone, Fax?)>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Adresse (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+<!-- Elements for the organisation (receiver) -->
+<!ELEMENT Organisation (Nom, Adresse, Phone, Fax?)>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Adresse (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+<!-- Elements for the purchase order -->
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Montant (#PCDATA)>
+<!ELEMENT Details (Produit)>
+<!-- Elements for the product informations -->
+<!ELEMENT Produit (Reference, Intitule, Quantite, PrixUnitaire)>
+<!ELEMENT Reference (#PCDATA)>
+<!ELEMENT Intitule (#PCDATA)>
+<!ELEMENT Quantite (#PCDATA)>
+<!ELEMENT PrixUnitaire (#PCDATA)>
