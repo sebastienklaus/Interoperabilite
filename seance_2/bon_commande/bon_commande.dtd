@@ -1,27 +1,33 @@
+<!-- 1st prototype of DTD -->
+
 <!-- Root element - ListeCommandes -->
-<!ELEMENT ListeCommandes (#PCDATA)>
+
+<!ELEMENT ListeCommandes (BonCommande+)>
 <!-- BonCommande Eelement -->
 <!ELEMENT BonCommande (Entreprise, Organisation, Date, Montant, Details)>
 <!ATTLIST BonCommande ID ID #REQUIRED>
 <!-- Elements for the company (sending) -->
-<!ELEMENT Entreprise (Nom, Adresse, Phone, Fax?)>
-<!ELEMENT Nom (#PCDATA)>
-<!ELEMENT Adresse (#PCDATA)>
-<!ELEMENT Phone (#PCDATA)>
-<!ELEMENT Fax (#PCDATA)>
+<!ELEMENT Entreprise (eNom, eAdresse, ePhone, eFax?)>
+<!ELEMENT eNom (#PCDATA)>
+<!ELEMENT eAdresse (#PCDATA)>
+<!ELEMENT ePhone (#PCDATA)>
+<!ELEMENT eFax (#PCDATA)>
 <!-- Elements for the organisation (receiver) -->
-<!ELEMENT Organisation (Nom, Adresse, Phone, Fax?)>
-<!ELEMENT Nom (#PCDATA)>
-<!ELEMENT Adresse (#PCDATA)>
-<!ELEMENT Phone (#PCDATA)>
-<!ELEMENT Fax (#PCDATA)>
+<!ELEMENT Organisation (oNom, oAdresse, oPhone, oFax?)>
+<!ELEMENT oNom (#PCDATA)>
+<!ELEMENT oAdresse (#PCDATA)>
+<!ELEMENT oPhone (#PCDATA)>
+<!ELEMENT oFax (#PCDATA)>
 <!-- Elements for the purchase order -->
 <!ELEMENT Date (#PCDATA)>
 <!ELEMENT Montant (#PCDATA)>
-<!ELEMENT Details (Produit)>
+<!ELEMENT Details (Produit+)>
 <!-- Elements for the product informations -->
 <!ELEMENT Produit (Reference, Intitule, Quantite, PrixUnitaire)>
 <!ELEMENT Reference (#PCDATA)>
 <!ELEMENT Intitule (#PCDATA)>
 <!ELEMENT Quantite (#PCDATA)>
 <!ELEMENT PrixUnitaire (#PCDATA)>
+
+
+<!-- 2nd prototype of DTD -->

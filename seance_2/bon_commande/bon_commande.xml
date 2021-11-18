@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE ListeCommandes SYSTEM "./bon_commande.dtd">
 <ListeCommandes>
-    <BonCommande ID="1">
+    <BonCommande ID="id_1">
         <Entreprise >
-            <Nom>Nom_Entreprise</Nom>
-            <Adresse>1 rue de l'Entreprise 54000 NANCY</Adresse>
-            <Phone>0329123456</Phone>
-            <Fax>0123456789</Fax>
+            <eNom>Nom_Entreprise</eNom>
+            <eAdresse>1 rue de l'Entreprise 54000 NANCY</eAdresse>
+            <ePhone>0329123456</ePhone>
+            <eFax>0123456789</eFax>
         </Entreprise>
         <Organisation>
-            <Nom>Nom_Organisation</Nom>
-            <Adresse>99 rue de l'Organisation 54000 NANCY</Adresse>
-            <Phone>0329123456</Phone>
+            <oNom>Nom_Organisation</oNom>
+            <oAdresse>99 rue de l'Organisation 54000 NANCY</oAdresse>
+            <oPhone>0329123456</oPhone>
         </Organisation>
         <Date>08/07/2021</Date>
         <Montant>20€</Montant>
@@ -30,17 +31,17 @@
         </Details>
     </BonCommande>
     
-    <BonCommande ID="2">
+    <BonCommande ID="id_2">
         <Entreprise>
-            <Nom>Nom_Entreprise</Nom>
-            <Adresse>66 arrondissement de l'Entreprise 75000 Paris</Adresse>
-            <Phone>0329987654</Phone>
-            <Fax>0987654321</Fax>
+            <eNom>Nom_Entreprise</eNom>
+            <eAdresse>66 arrondissement de l'Entreprise 75000 Paris</eAdresse>
+            <ePhone>0329987654</ePhone>
+            <eFax>0987654321</eFax>
         </Entreprise>
         <Organisation>
-            <Nom>Nom_Organisation</Nom>
-            <Adresse>33 rue de l'Organisation 55000 Bar-le-duc</Adresse>
-            <Phone>0378543689</Phone>
+            <oNom>Nom_Organisation</oNom>
+            <oAdresse>33 rue de l'Organisation 55000 Bar-le-duc</oAdresse>
+            <oPhone>0378543689</oPhone>
         </Organisation>
         <Date>16/11/2021</Date>
         <Montant>12€</Montant>
@@ -54,17 +55,17 @@
         </Details>
     </BonCommande>
 
-    <BonCommande ID="3">
-        <Entreprise >
-            <Nom>Nom_Entreprise</Nom>
-            <Adresse>23 rue de l'Entreprise 54320 Maxéville</Adresse>
-            <Phone>0321548931</Phone>
+    <BonCommande ID="id_3">
+        <Entreprise>
+            <eNom>Nom_Entreprise</eNom>
+            <eAdresse>23 rue de l'Entreprise 54320 Maxéville</eAdresse>
+            <ePhone>0321548931</ePhone>
         </Entreprise>
         <Organisation >
-            <Nom>Nom_Organisation</Nom>
-            <Adresse>33 rue de l'Organisation 55000 Bar-le-duc</Adresse>
-            <Phone>0325984722</Phone>
-            <Fax>0986256251</Fax>
+            <oNom>Nom_Organisation</oNom>
+            <oAdresse>33 rue de l'Organisation 55000 Bar-le-duc</oAdresse>
+            <oPhone>0325984722</oPhone>
+            <oFax>0986256251</oFax>
         </Organisation>
         <Date>21/11/2021</Date>
         <Montant>75€</Montant>
@@ -80,40 +81,6 @@
                 <Intitule>Café en capsule - Intensité 9 - Boite de 20</Intitule>
                 <Quantite>2</Quantite>
                 <PrixUnitaire>3€</PrixUnitaire>
-            </Produit>
-        </Details>
-    </BonCommande>
-</ListeCommandes>
-
-
-
-<ListeCommandes>
-    <BonCommande ID="1">
-        <Entreprise >
-            <Nom>Nom_Entreprise</Nom>
-            <Adresse>1 rue de l'Entreprise 54000 NANCY</Adresse>
-            <Phone>0329123456</Phone>
-            <Fax>0123456789</Fax>
-        </Entreprise>
-        <Organisation>
-            <Nom>Nom_Organisation</Nom>
-            <Adresse>99 rue de l'Organisation 54000 NANCY</Adresse>
-            <Phone>0329123456</Phone>
-        </Organisation>
-        <Date>08/07/2021</Date>
-        <Montant>20€</Montant>
-        <Details>
-            <Produit>
-                <Reference>08AZBN</Reference>
-                <Intitule>Café en capsule - Intensité 8 - Boite de 20</Intitule>
-                <Quantite>4</Quantite>
-                <PrixUnitaire>3€</PrixUnitaire>
-            </Produit>
-            <Produit>
-                <Reference>11TYOP</Reference>
-                <Intitule>Café en capsule - Intensité 11 Saveur Noisette - Boite de 10</Intitule>
-                <Quantite>3</Quantite>
-                <PrixUnitaire>2€</PrixUnitaire>
             </Produit>
         </Details>
     </BonCommande>
