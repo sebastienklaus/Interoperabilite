@@ -2,7 +2,7 @@
 <!DOCTYPE ListeCommandes SYSTEM "./bon_commande.dtd">
 <ListeCommandes>
     <BonCommande ID="id_1">
-        <Entreprise >
+        <Entreprise>
             <eNom>Nom_Entreprise</eNom>
             <eAdresse>1 rue de l'Entreprise 54000 NANCY</eAdresse>
             <ePhone>0329123456</ePhone>
