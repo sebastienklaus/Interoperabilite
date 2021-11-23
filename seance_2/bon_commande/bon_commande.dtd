@@ -8,12 +8,14 @@
 <!ATTLIST BonCommande ID ID #REQUIRED>
 <!-- Elements for the company (sending) -->
 <!ELEMENT Entreprise (eNom, eAdresse, ePhone, eFax?)>
+<!ATTLIST Entreprise ID ID #REQUIRED>
 <!ELEMENT eNom (#PCDATA)>
 <!ELEMENT eAdresse (#PCDATA)>
 <!ELEMENT ePhone (#PCDATA)>
 <!ELEMENT eFax (#PCDATA)>
 <!-- Elements for the organisation (receiver) -->
 <!ELEMENT Organisation (oNom, oAdresse, oPhone, oFax?)>
+<!ATTLIST Organisation ID ID #REQUIRED>
 <!ELEMENT oNom (#PCDATA)>
 <!ELEMENT oAdresse (#PCDATA)>
 <!ELEMENT oPhone (#PCDATA)>
@@ -24,6 +26,7 @@
 <!ELEMENT Details (Produit+)>
 <!-- Elements for the product informations -->
 <!ELEMENT Produit (Reference, Intitule, Quantite, PrixUnitaire)>
+<!ATTLIST Produit ID ID #REQUIRED>
 <!ELEMENT Reference (#PCDATA)>
 <!ELEMENT Intitule (#PCDATA)>
 <!ELEMENT Quantite (#PCDATA)>

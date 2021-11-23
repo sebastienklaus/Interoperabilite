@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE ListeCommandes SYSTEM "./bon_commande.dtd">
 <ListeCommandes>
-    <BonCommande ID="id_1">
-        <Entreprise >
+    <BonCommande ID="bon_comm_1">
+        <Entreprise ID="entr_1">
             <eNom>Nom_Entreprise</eNom>
             <eAdresse>1 rue de l'Entreprise 54000 NANCY</eAdresse>
             <ePhone>0329123456</ePhone>
             <eFax>0123456789</eFax>
         </Entreprise>
-        <Organisation>
+        <Organisation ID="org_1">
             <oNom>Nom_Organisation</oNom>
             <oAdresse>99 rue de l'Organisation 54000 NANCY</oAdresse>
             <oPhone>0329123456</oPhone>
@@ -16,13 +16,13 @@
         <Date>08/07/2021</Date>
         <Montant>20€</Montant>
         <Details>
-            <Produit>
+            <Produit ID="prod_1">
                 <Reference>08AZBN</Reference>
                 <Intitule>Café en capsule - Intensité 8 - Boite de 20</Intitule>
                 <Quantite>4</Quantite>
                 <PrixUnitaire>3€</PrixUnitaire>
             </Produit>
-            <Produit>
+            <Produit ID="prod_2">
                 <Reference>11TYOP</Reference>
                 <Intitule>Café en capsule - Intensité 11 Saveur Noisette - Boite de 10</Intitule>
                 <Quantite>3</Quantite>
@@ -31,14 +31,14 @@
         </Details>
     </BonCommande>
     
-    <BonCommande ID="id_2">
-        <Entreprise>
+    <BonCommande ID="bon_comm_2">
+        <Entreprise ID="entr_2">
             <eNom>Nom_Entreprise</eNom>
             <eAdresse>66 arrondissement de l'Entreprise 75000 Paris</eAdresse>
             <ePhone>0329987654</ePhone>
             <eFax>0987654321</eFax>
         </Entreprise>
-        <Organisation>
+        <Organisation ID="org_2">
             <oNom>Nom_Organisation</oNom>
             <oAdresse>33 rue de l'Organisation 55000 Bar-le-duc</oAdresse>
             <oPhone>0378543689</oPhone>
@@ -46,7 +46,7 @@
         <Date>16/11/2021</Date>
         <Montant>12€</Montant>
         <Details>
-            <Produit>
+            <Produit ID="prod_3">
                 <Reference>88XCDF</Reference>
                 <Intitule>Pull - Sometimes, i think about coffee ...</Intitule>
                 <Quantite>1</Quantite>
@@ -55,13 +55,13 @@
         </Details>
     </BonCommande>
 
-    <BonCommande ID="id_3">
-        <Entreprise>
+    <BonCommande ID="bon_comm_3">
+        <Entreprise ID="entr_3">
             <eNom>Nom_Entreprise</eNom>
             <eAdresse>23 rue de l'Entreprise 54320 Maxéville</eAdresse>
             <ePhone>0321548931</ePhone>
         </Entreprise>
-        <Organisation >
+        <Organisation ID="org_3">
             <oNom>Nom_Organisation</oNom>
             <oAdresse>33 rue de l'Organisation 55000 Bar-le-duc</oAdresse>
             <oPhone>0325984722</oPhone>
@@ -70,13 +70,13 @@
         <Date>21/11/2021</Date>
         <Montant>75€</Montant>
         <Details>
-            <Produit>
+            <Produit ID="prod_4">
                 <Reference>88XCDF</Reference>
                 <Intitule>Machine à café - L'OR BARISTA</Intitule>
                 <Quantite>1</Quantite>
                 <PrixUnitaire>69€</PrixUnitaire>
             </Produit>
-            <Produit>
+            <Produit ID="prod_5">
                 <Reference>09WQMO</Reference>
                 <Intitule>Café en capsule - Intensité 9 - Boite de 20</Intitule>
                 <Quantite>2</Quantite>
