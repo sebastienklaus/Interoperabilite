@@ -1,7 +1,7 @@
 ﻿Séance 3 - XML, des documents numériques
 
 Xml est une norme pour documents numériques
-Questions 1 :
+Questions :
     • <!ELEMENT nom_element (fils1, fils2, …) pour un élément XML
     • <!ATTLIST nom_element nom_attribut type d’attr définition_attr pour un attribut d’un élément HTML
     • On défini cette arborescence dans la balise <!ELEMENT , avec entre parenthèses les différentes fils de l’élément
@@ -9,4 +9,8 @@ Questions 1 :
     • Tous les fichiers ont été validés, sauf pour les bons de commandes :
         ◦ Il s’agissait d’une erreur de vocabulaire pour l’attribut id de l’entreprise, qui était mal nommé :
         ◦ 
-
+Séance 3 - Interlude : open data partout... 
+Données ouvertes, des histoires d'outils...
+    • Les données de type CSV seront utilisés par des utilisateurs moins expérimentés en informatique, car son utilisation est facile, les données sont + lisibles et les outils permettant leur utilisation sont plus répandus (Microsoft Excel, LibreOficce Calc, éditeur de texte…)
+    • Les données de type JSON et XML seront eux utilisés par des utilisateurs plus expérimentés en informatique, car la syntaxes de ces 2 types de données se rapprochent du JavaScript (objet) et de l’ HTML (balise), et les outils sont plus spécifiques (commande xmllint pour le XML, environnement de dev, ...).
+    • L’un des intérêts de changer le format de données serait de s’adapter à leur type utilisation dans des applications.
