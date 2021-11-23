@@ -1,1 +1,24 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Previsions SYSTEM "./meteo_nancy.dtd">
+<Previsions>
+    <Heure ID="id_008" Timestamp="2021-11-23 08:00:00">
+        <Temperature>273.3 K</Temperature>
+        <Pluie>0</Pluie>
+        <Vent>
+            <Vitesse>14</Vitesse>
+            <Rafales>25.2</Rafales>
+        </Vent>
+        <Humidité>87</Humidité>
+        <Pression>1029.2</Pression>
+    </Heure>
+    <Heure ID="id_009" Timestamp="2021-11-23 09:00:00">
+        <Temperature>273.8</Temperature>
+        <Pluie>0</Pluie>
+        <Vent>
+            <Vitesse>14</Vitesse>
+            <Rafales>24.8</Rafales>
+        </Vent>
+        <Humidité>86</Humidité>
+        <Pression>1029.7</Pression>
+    </Heure>
+</Previsions>

@@ -31,6 +31,3 @@
 <!ELEMENT Intitule (#PCDATA)>
 <!ELEMENT Quantite (#PCDATA)>
 <!ELEMENT PrixUnitaire (#PCDATA)>
-
-
-<!-- 2nd prototype of DTD -->
