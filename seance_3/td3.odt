@@ -5,4 +5,8 @@ Questions 1 :
     • <!ELEMENT nom_element (fils1, fils2, …) pour un élément XML
     • <!ATTLIST nom_element nom_attribut type d’attr définition_attr pour un attribut d’un élément HTML
     • On défini cette arborescence dans la balise <!ELEMENT , avec entre parenthèses les différentes fils de l’élément
+    • Résultats avec les commande xmllint : No error
+    • Tous les fichiers ont été validés, sauf pour les bons de commandes :
+        ◦ Il s’agissait d’une erreur de vocabulaire pour l’attribut id de l’entreprise, qui était mal nommé :
+        ◦ 
 
