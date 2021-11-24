@@ -1,0 +1,4 @@
+<!-- 2nd prototype of DTD -->
+
+<!-- Root element - SystemeBonsCommandes -->
+<!ELEMENT SystemeBonsCommandes (ListeEntreprises, BonsCommandes)>
