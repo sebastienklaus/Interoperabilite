@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <!DOCTYPE Previsions SYSTEM "./meteo_nancy.dtd">
 <Previsions>
     <Heure ID="id_008" Timestamp="2021-11-23 08:00:00">
