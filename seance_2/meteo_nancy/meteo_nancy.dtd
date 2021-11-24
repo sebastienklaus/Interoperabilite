@@ -1,7 +1,7 @@
 <!-- Root element - Previsons -->
 <!ELEMENT Previsions (Heure+)>
 <!-- Heure Element -->
-<!ELEMENT Heure (Temperature, Pluie, Vent, Humidité, Pression)>
+<!ELEMENT Heure (Temperature, Pluie, Vent, Humidite, Pression)>
 <!ATTLIST Heure ID ID #REQUIRED>
 <!ATTLIST Heure Timestamp CDATA #REQUIRED>
 <!-- Elements for the hour -->
@@ -10,5 +10,5 @@
 <!ELEMENT Vent (Vitesse, Rafales)>
 <!ELEMENT Vitesse (#PCDATA)>
 <!ELEMENT Rafales (#PCDATA)>
-<!ELEMENT Humidité (#PCDATA)>
+<!ELEMENT Humidite (#PCDATA)>
 <!ELEMENT Pression (#PCDATA)>

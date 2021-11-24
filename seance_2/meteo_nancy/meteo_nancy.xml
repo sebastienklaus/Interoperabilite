@@ -8,7 +8,7 @@
             <Vitesse>14</Vitesse>
             <Rafales>25.2</Rafales>
         </Vent>
-        <Humidité>87</Humidité>
+        <Humidite>87</Humidite>
         <Pression>1029.2</Pression>
     </Heure>
     <Heure ID="id_009" Timestamp="2021-11-23 09:00:00">
@@ -18,7 +18,7 @@
             <Vitesse>14</Vitesse>
             <Rafales>24.8</Rafales>
         </Vent>
-        <Humidité>86</Humidité>
+        <Humidite>86</Humidite>
         <Pression>1029.7</Pression>
     </Heure>
 </Previsions>
