@@ -48,7 +48,7 @@
             <Date>16/11/2021</Date>
             <Montant>12€</Montant>
             <Details>
-                <Produit ID="prod3" ProductFrom="e3">
+                <Produit ID="prod3" ProductFrom="e4">
                     <Reference>88XCDF</Reference>
                     <Intitule>Pull - Sometimes, i think about coffee ...</Intitule>
                     <Quantite>1</Quantite>
