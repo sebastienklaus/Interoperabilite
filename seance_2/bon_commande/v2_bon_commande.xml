@@ -2,24 +2,24 @@
 <!DOCTYPE SystemeBonsCommandes SYSTEM "./v2_bon_commande.dtd">
 <SystemeBonsCommandes>
     <ListeEntreprises>
-        <Entreprise ID="e1">
+        <Entreprise idEnt="e1">
             <Nom>Les 3 Moutons</Nom>
             <Adresse>3 rue du Mouton 54000 NANCY</Adresse>
             <Phone>0329789456</Phone>
             <Fax>0912345678</Fax>
         </Entreprise>
-        <Entreprise ID="e2">
+        <Entreprise idEnt="e2">
             <Nom>Les 5 Bandits</Nom>
             <Adresse>5 rue du Bandit 54320 MAXEVILLE</Adresse>
             <Phone>0312345678</Phone>
         </Entreprise>
-        <Entreprise ID="e3">
+        <Entreprise idEnt="e3">
             <Nom>Les 7 Employes</Nom>
             <Adresse>7 impasse de l'Employe 54520 LAXOU</Adresse>
             <Phone>0645289713</Phone>
             <Fax>0978945612</Fax>
         </Entreprise>
-        <Entreprise ID="e4">
+        <Entreprise idEnt="e4">
             <Nom>Les 25 Chausettes</Nom>
             <Adresse>25 rue du Pied 54500 VANDOEUVRE-LES-NANCY</Adresse>
             <Phone>0925479617</Phone>

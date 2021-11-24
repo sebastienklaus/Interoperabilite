@@ -6,7 +6,7 @@
 <!-- ListeEntreprises Element -->
 <!ELEMENT ListeEntreprises (Entreprise+)>
 <!ELEMENT Entreprise (Nom, Adresse, Phone, Fax?)>
-<!ATTLIST Entreprise ID ID #REQUIRED>
+<!ATTLIST Entreprise idEnt ID #REQUIRED>
 <!ELEMENT Nom (#PCDATA)>
 <!ELEMENT Adresse (#PCDATA)>
 <!ELEMENT Phone (#PCDATA)>
