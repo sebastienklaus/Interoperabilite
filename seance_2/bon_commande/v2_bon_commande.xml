@@ -1,1 +1,78 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE SystemeBonsCommandes SYSTEM "./v2_bon_commande.dtd">
+<SystemeBonsCommandes>
+    <ListeEntreprises>
+        <Entreprise ID="e1">
+            <Nom>Les 3 Moutons</Nom>
+            <Adresse>3 rue du Mouton 54000 NANCY</Adresse>
+            <Phone>0329789456</Phone>
+            <Fax>0912345678</Fax>
+        </Entreprise>
+        <Entreprise ID="e2">
+            <Nom>Les 5 Bandits</Nom>
+            <Adresse>5 rue du Bandit 54320 MAXEVILLE</Adresse>
+            <Phone>0312345678</Phone>
+        </Entreprise>
+        <Entreprise ID="e3">
+            <Nom>Les 7 Employes</Nom>
+            <Adresse>7 impasse de l'Employe 54520 LAXOU</Adresse>
+            <Phone>0645289713</Phone>
+            <Fax>0978945612</Fax>
+        </Entreprise>
+        <Entreprise ID="e4">
+            <Nom>Les 25 Chausettes</Nom>
+            <Adresse>25 rue du Pied 54500 VANDOEUVRE-LES-NANCY</Adresse>
+            <Phone>0925479617</Phone>
+        </Entreprise>
+    </ListeEntreprises>
+    <BonsCommandes>
+        <BonCommande emet="e3" recept="e1">
+            <Date>08/07/2021</Date>
+            <Montant>20€</Montant>
+            <Details>
+                <Produit ID="prod_1" ProductFrom="e2">
+                    <Reference>08AZBN</Reference>
+                    <Intitule>Café en capsule - Intensité 8 - Boite de 20</Intitule>
+                    <Quantite>4</Quantite>
+                    <PrixUnitaire>3€</PrixUnitaire>
+                </Produit>
+                <Produit ID="prod_2" ProductFrom="e1 e2 e3 e4">
+                    <Reference>11TYOP</Reference>
+                    <Intitule>Café en capsule - Intensité 11 Saveur Noisette - Boite de 10</Intitule>
+                    <Quantite>3</Quantite>
+                    <PrixUnitaire>2€</PrixUnitaire>
+                </Produit>
+            </Details>
+        </BonCommande>
+        <BonCommande emet="e4" recept="e2">
+            <Date>16/11/2021</Date>
+            <Montant>12€</Montant>
+            <Details>
+                <Produit ID="prod_3" ProductFrom="e3">
+                    <Reference>88XCDF</Reference>
+                    <Intitule>Pull - Sometimes, i think about coffee ...</Intitule>
+                    <Quantite>1</Quantite>
+                    <PrixUnitaire>12€</PrixUnitaire>
+                </Produit>
+            </Details>
+        </BonCommande>
+        <BonCommande emet="e1" recept="e4">
+            <Date>21/11/2021</Date>
+            <Montant>75€</Montant>
+            <Details>
+                <Produit ID="prod_4" ProductFrom="e1 e2">
+                    <Reference>88XCDF</Reference>
+                    <Intitule>Machine à café - L'OR BARISTA</Intitule>
+                    <Quantite>1</Quantite>
+                    <PrixUnitaire>69€</PrixUnitaire>
+                </Produit>
+                <Produit ID="prod_5" ProductFrom="e3 e4 e2">
+                    <Reference>09WQMO</Reference>
+                    <Intitule>Café en capsule - Intensité 9 - Boite de 20</Intitule>
+                    <Quantite>2</Quantite>
+                    <PrixUnitaire>3€</PrixUnitaire>
+                </Produit>
+            </Details>
+        </BonCommande>
+    </BonsCommandes>
+</SystemeBonsCommandes>
