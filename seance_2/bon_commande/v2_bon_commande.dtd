@@ -14,16 +14,16 @@
 
 <!ELEMENT BonsCommandes (BonCommande+)>
 <!ELEMENT BonCommande (Date, Montant, Details)>
-<!ATTLIST BonCommande emet IDREF #REQUIRED>
-<!ATTLIST BonCommande recept IDREF #REQUIRED>
+<!ATTLIST BonCommande emet IDREF #REQUIRED
+                      recept IDREF #REQUIRED>
 <!-- Elements for the purchase order -->
 <!ELEMENT Date (#PCDATA)>
 <!ELEMENT Montant (#PCDATA)>
 <!ELEMENT Details (Produit+)>
 <!-- Elements for the product informations -->
 <!ELEMENT Produit (Reference, Intitule, Quantite, PrixUnitaire)>
-<!ATTLIST Produit ID ID #REQUIRED>
-<!ATTLIST Produit ProductFrom IDREFS #REQUIRED>
+<!ATTLIST Produit ID ID #REQUIRED
+                  ProductFrom IDREFS #REQUIRED>
 <!ELEMENT Reference (#PCDATA)>
 <!ELEMENT Intitule (#PCDATA)>
 <!ELEMENT Quantite (#PCDATA)>
