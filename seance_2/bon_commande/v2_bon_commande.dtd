@@ -2,3 +2,28 @@
 
 <!-- Root element - SystemeBonsCommandes -->
 <!ELEMENT SystemeBonsCommandes (ListeEntreprises, BonsCommandes)>
+
+<!-- ListeEntreprises Element -->
+<!ELEMENT ListeEntreprises (Entreprise+)>
+<!ELEMENT Entreprise (Nom, Adresse, Phone, Fax?)>
+<!ATTLIST Entreprise ID ID #REQUIRED>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Adresse (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+
+<!ELEMENT BonsCommandes (BonCommande+)>
+<!ELEMENT BonCommande (Date, Montant, Details)>
+<!ATTLIST BonCommande emet IDREF #REQUIRED>
+<!ATTLIST BonCommande emet IDREF #REQUIRED>
+<!-- Elements for the purchase order -->
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Montant (#PCDATA)>
+<!ELEMENT Details (Produit+)>
+<!-- Elements for the product informations -->
+<!ELEMENT Produit (Reference, Intitule, Quantite, PrixUnitaire)>
+<!ATTLIST Produit ID ID #REQUIRED>
+<!ELEMENT Reference (#PCDATA)>
+<!ELEMENT Intitule (#PCDATA)>
+<!ELEMENT Quantite (#PCDATA)>
+<!ELEMENT PrixUnitaire (#PCDATA)>
