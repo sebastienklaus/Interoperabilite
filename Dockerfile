@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-RUN apt-get update &&
+RUN apt-get update
 
 RUN apt install nano
 
