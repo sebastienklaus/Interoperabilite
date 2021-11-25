@@ -58,7 +58,7 @@
    </xsl:template>
 
    <xsl:template match="Genre">
-      Genre : <span style="color:#ff0000">
+      <xsl:value-of select="name(.)"/> : <span style="color:#ff0000">
       <xsl:value-of select="."/></span>
       <br/>
    </xsl:template>
