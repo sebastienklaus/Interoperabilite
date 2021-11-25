@@ -1,19 +1,19 @@
-<?xml version="1.0"  encoding="ISO-8859-1" standalone="no"?>
+<?xml version="1.0"  encoding="UTF-8" standalone="no"?>
 <!DOCTYPE FILMS SYSTEM "./films.dtd">
 
 <FILMS>
   <Film ID="f01" Affiche="http://www.homme-moderne.org/enfinpris/images/affiche.gif" Langue="fr">
       <Titre>Enfin pris ?</Titre>
       <Realisateur ID="r01">
-	<Nom>Carles</Nom>
-	<Prenom>Pierre</Prenom>
+	      <Nom>Carles</Nom>
+	      <Prenom>Pierre</Prenom>
       </Realisateur>
       <Genre>Documentaire</Genre>
       <Pays>France</Pays>
       <Duree>1h30</Duree>
       <Resume>
-	<Titre>Daniel Schneidermann dans le viseur du franc-tireur Pierre Carles.</Titre>
-	<Texte>
+	      <Titre>Daniel Schneidermann dans le viseur du franc-tireur Pierre Carles.</Titre>
+	      <Texte>
 Ce nouveau film opère une synthèse. Il part de Bourdieu, coupant à
 l'éloge funèbre (le sociologue est mort en janvier dernier) pour mieux
 se fixer sur... Daniel Schneidermann. Le producteur-animateur d'Arrêt
@@ -40,20 +40,20 @@ de l'autre (Schneidermann), censées prouver sa schizophrénie, est un
 miroir. Pierre Carles finit par rire comme un gosse, et nous avec, de
 s'y voir au fond en quête de lui-même. Chez celui qui s'échappe, il y
 a toujours le secret désir d'être pris.
-</Texte>
+        </Texte>
       </Resume>
     <Acteurs>
       <Acteur ID="a01">
-	<Nom>Carles</Nom>
-	<Prenom>Pierre</Prenom>
+	      <Nom>Carles</Nom>
+	      <Prenom>Pierre</Prenom>
       </Acteur>
       <Acteur ID="a02">
-      <Nom>Bourdieu</Nom>
-      <Prenom>Pierre</Prenom>
+        <Nom>Bourdieu</Nom>
+        <Prenom>Pierre</Prenom>
       </Acteur>
       <Acteur ID="a03">
-	<Nom>Schneidermann</Nom>
-	<Prenom>Daniel</Prenom>
+	      <Nom>Schneidermann</Nom>
+	      <Prenom>Daniel</Prenom>
       </Acteur>
     </Acteurs>
     <Image>
