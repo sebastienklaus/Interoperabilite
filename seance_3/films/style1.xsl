@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding="UTF-8" ?>
  <xsl:stylesheet version="1.0"
 		 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-   <xsl:output method="text" encoding="UTF-8" indent="yes"/>
+   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
    <!-- On démarre le parcours de l'arbre xml de la racine -->
    <xsl:template match="/"> 
@@ -15,7 +15,7 @@
    </xsl:template>
 
    <xsl:template match="Film">
-      <div style="border : 20px solid grey; margin : 1em 0">
+      <div style="border : 2px solid grey; margin : 1em 0">
          <xsl:apply-templates select="Titre"/>  
          <ul>
             <span style="color:#ff0000">Realisateur :</span>
