@@ -6,7 +6,12 @@
    <!-- On démarre de la racine -->
    <xsl:template match="/"> 
      <!-- On parcourt le sous-arbre dans l'ordre 'normal' -->
-     <xsl:apply-templates />  
+     <html>
+      <body>
+          <h1>List Of Movies</h1>
+          <xsl:apply-templates /> 
+      </body>
+   </html>
    </xsl:template>
    
    <!-- Régle à appliquer lorsque le parcours 
@@ -14,15 +19,15 @@
    <xsl:template match="Film">
      <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
      <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
-     <xsl:apply-templates select="Titre"/>  
+     <ul><xsl:apply-templates select="Titre"/></ul>  
    </xsl:template>
 
    <xsl:template match="Film/Titre">
-     <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
-     <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
-     Titre du film : <!-- valeur écrite dans la sortie -->
-     <xsl:value-of select="."/>  
-     <xsl:text>    </xsl:text>
+      <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
+      <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
+      
+      <li>Titre du film : <xsl:value-of select="."/></li>  
+      <xsl:text>    </xsl:text>
    </xsl:template>
 
 
