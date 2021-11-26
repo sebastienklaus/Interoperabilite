@@ -9,7 +9,9 @@
      <html>
       <body>
           <h1>List Of Movies</h1>
-          <xsl:apply-templates /> 
+          <ul>
+             <xsl:apply-templates /> 
+          </ul>
       </body>
    </html>
    </xsl:template>
@@ -19,7 +21,7 @@
    <xsl:template match="Film">
      <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
      <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
-     <ul><xsl:apply-templates select="Titre"/></ul>  
+     <xsl:apply-templates select="Titre"/>  
    </xsl:template>
 
    <xsl:template match="Film/Titre">
