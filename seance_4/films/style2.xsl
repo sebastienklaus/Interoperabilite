@@ -11,16 +11,16 @@
    
    <!-- Régle à appliquer lorsque le parcours 
 	arrive sur un élément nommé 'Scenario' -->
-   <xsl:template match="Scenario">
+   <xsl:template match="Film">
      <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
      <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
-     <xsl:apply-templates select="Prenom"/>  
+     <xsl:apply-templates select="Titre"/>  
    </xsl:template>
 
-   <xsl:template match="Scenario/Prenom">
+   <xsl:template match="Film/Titre">
      <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
      <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
-     Prénom : <!-- valeur écrite dans la sortie -->
+     Titre du film : <!-- valeur écrite dans la sortie -->
      <xsl:value-of select="."/>  
      <xsl:text>    </xsl:text>
    </xsl:template>
