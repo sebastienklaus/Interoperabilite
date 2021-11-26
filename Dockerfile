@@ -8,7 +8,9 @@ RUN apt install -y libxml2-utils
 
 RUN apt install -y xsltproc
 
+RUN apt install -y apache2
 
-EXPOSE 2080
+
+EXPOSE 80
 
 CMD ["/bin/bash"]
