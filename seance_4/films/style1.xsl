@@ -24,7 +24,7 @@
      <xsl:apply-templates select="Titre"/>  
    </xsl:template>
 
-   <xsl:template match="Film/Titre">
+   <xsl:template match="Titre">
       <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
       <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
       
