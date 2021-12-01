@@ -33,7 +33,7 @@
    <xsl:template match="FILMS/Film">
             <tr>
                 <td><xsl:value-of select="./Titre"/></td>
-                <td><xsl:value-of select="./Realisateur[2]/Nom"/></td>
+                <td><xsl:value-of select="./Realisateur[1]/Nom"/></td>
                 <td><xsl:value-of select="./Pays"/></td>
                 <td><xsl:value-of select="./Genre"/></td>
                 <td><xsl:value-of select="./Duree"/></td>
