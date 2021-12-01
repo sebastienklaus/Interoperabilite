@@ -49,10 +49,8 @@
                 <td><xsl:value-of select="./Genre"/></td>
                 <td><xsl:value-of select="./Duree"/></td>
                 <td>
-                    <a>
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="@Affiche"/>
-                        </xsl:attribute>
+                    <!-- 2 façons de faire : 1. {@}     2.attribute & value-of -->
+                    <a href="{@Affiche}">
                         <img width="70">
                             <xsl:attribute name="src">
                                 <xsl:value-of select="@Affiche"/>
