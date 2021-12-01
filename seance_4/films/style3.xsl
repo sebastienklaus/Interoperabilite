@@ -9,7 +9,7 @@
      <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
      <html>
       <body>
-          <h1>List Of Movies</h1>
+          <h1>List Of <xsl:value-of select="count(/FILMS/Film)"/> Movies</h1>
           <table border="1">
               <tbody>
                 <tr>
