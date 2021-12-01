@@ -38,12 +38,8 @@
                 <td><xsl:number value="position()"/>.</td>
                 <td><b><xsl:value-of select="./Titre"/></b></td>
                 <td>
-                    <xsl:for-each select="./Realisateur">
-                        <b><xsl:value-of select="./Nom"/></b>
-                        <xsl:text> </xsl:text>
-                        <xsl:value-of select="./Prenom"/>
-                        <br />
-                    </xsl:for-each>
+                    <xsl:apply-templates select="./Realisateur"/>
+                    
                 </td>
                 <td><xsl:value-of select="./Pays"/></td>
                 <td><xsl:value-of select="./Genre"/></td>
@@ -59,6 +55,13 @@
                     </a>
                 </td>
            </tr>
+   </xsl:template>
+
+   <xsl:template match="Realisateur">
+    <b><xsl:value-of select="./Nom"/></b>
+    <xsl:text> </xsl:text>
+    <xsl:value-of select="./Prenom"/>
+    <br/>
    </xsl:template>
 
 </xsl:stylesheet>
