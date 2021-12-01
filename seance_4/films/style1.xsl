@@ -17,15 +17,15 @@
    </xsl:template>
    
    <!-- Régle à appliquer lorsque le parcours 
-	arrive sur un élément nommé 'Scenario' -->
+	arrive sur un élément nommé 'Film' -->
    <xsl:template match="Film">
-     <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
+     <!-- Cette fois on ne parcourt que le sous élement 'Titre' -->
      <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
      <xsl:apply-templates select="Titre"/>  
    </xsl:template>
 
    <xsl:template match="Titre">
-      <!-- Cette fois on ne parcourt que le sous élement 'Prenom' -->
+      <!-- Cette fois on ne parcourt que le sous élement 'Titre' -->
       <!-- à noter que si le parcours arrive sur une feuille, le contenu de la feuille est inscrit en sortie --> 
       
       <li>Titre du film : <xsl:value-of select="."/></li>  
