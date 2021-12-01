@@ -30,7 +30,7 @@
     <xsl:apply-templates select="Film"/>
    </xsl:template>
 
-   <xsl:template match="FILMS/Film">
+   <xsl:template match="Film">
             <tr>
                 <td><xsl:value-of select="./Titre"/></td>
                 <td><xsl:value-of select="./Realisateur[1]/Nom"/></td>
