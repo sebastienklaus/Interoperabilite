@@ -22,6 +22,7 @@
                     <td><b>Genre</b></td>
                     <td><b>Durée</b></td>
                     <td><b>Affiche</b></td>
+                    <td><b>Ils ont aimé</b></td>
                 </tr>
                 <xsl:apply-templates /> 
               </tbody>
@@ -42,7 +43,7 @@
                 <td>
                     <xsl:choose>
                         <xsl:when test="count(./Realisateur) > 3"> 
-                            <xsl:text>Film collectif</xsl:text>
+                            <em>Film collectif</em>
                         </xsl:when>
                         <xsl:otherwise>
                             <xsl:apply-templates select="./Realisateur"/>
@@ -62,6 +63,9 @@
                         </img>
                     </a>
                 </td>
+                <td>
+                    <xsl:apply-templates select="./Critique/Note"/>
+                </td>
            </tr>
    </xsl:template>
 
@@ -71,5 +75,13 @@
         <xsl:value-of select="./Prenom"/>
         <br/>
    </xsl:template>
+
+   <xsl:template match="Critique/Note">
+       <xsl:if test="text() >= 3 ">
+        <xsl:value-of select="../Media"/>
+        </xsl:if>
+
+   </xsl:template>
+
 
 </xsl:stylesheet>
