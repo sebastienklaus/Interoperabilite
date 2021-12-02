@@ -42,11 +42,11 @@
                 <td><b><xsl:value-of select="./Titre"/></b></td>
                 <td>
                     <xsl:choose>
-                        <xsl:when test="count(./Realisateur) > 3"> 
-                            <em>Film collectif</em>
+                        <xsl:when test="count(./Realisateur) &lt; 3"> 
+                            <xsl:apply-templates select="./Realisateur"/>
                         </xsl:when>
                         <xsl:otherwise>
-                            <xsl:apply-templates select="./Realisateur"/>
+                            <em>Film collectif</em>
                         </xsl:otherwise>
                     </xsl:choose>
                 </td>
@@ -64,7 +64,7 @@
                     </a>
                 </td>
                 <td>
-                    <xsl:apply-templates select="./Critique/Note"/>
+                    <xsl:apply-templates select="./Critique"/>
                 </td>
            </tr>
    </xsl:template>
@@ -76,9 +76,10 @@
         <br/>
    </xsl:template>
 
-   <xsl:template match="Critique/Note">
-       <xsl:if test="text() >= 3 ">
-        <xsl:value-of select="../Media"/>
+   <xsl:template match="Critique">
+        <xsl:if test="./Note >= 3 ">
+            <xsl:value-of select="./Media"/>
+            <!-- Possible aussi de revenir en arrière avec ../Media en étant dans le match Critique/Note -->
         </xsl:if>
 
    </xsl:template>
