@@ -3,6 +3,8 @@
 		 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
    <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
+   <xsl:strip-space elements="Film"/>
+
    <!-- On démarre de la racine -->
    <xsl:template match="/"> 
      <!-- On parcourt le sous-arbre dans l'ordre 'normal' -->
