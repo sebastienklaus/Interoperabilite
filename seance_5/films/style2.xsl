@@ -10,6 +10,21 @@
      <!-- On parcourt le sous-arbre dans l'ordre 'normal' -->
      <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
      <html>
+        <head>
+            <style>
+                .aime {
+                color           : red;
+                }
+               .lire {
+                text-decoration : none;
+                text-align      : right;
+                font-size       : small;
+                }
+            
+                a {text-decoration : inherit;}				
+            
+                </style>
+        </head>
       <body>
           <h1>List Of <xsl:value-of select="count(/FILMS/Film)"/> Movies</h1>
           <table border="1">
@@ -22,7 +37,7 @@
                     <td><b>Genre</b></td>
                     <td><b>Durée</b></td>
                     <td><b>Affiche</b></td>
-                    <td><b>Ils ont aimé</b></td>
+                    <td><b>Critique(<span class="aime">Ils ont aimé</span>)</b></td>
                 </tr>
                 <xsl:apply-templates /> 
               </tbody>
@@ -64,8 +79,11 @@
                         </img>
                     </a>
                 </td>
-                <td>
+                <td class="try">
                     <xsl:apply-templates select="./Critique"/>
+                    <div>
+                        <a href="./critiques.html#{@ID}">CRITIQUE</a>
+                    </div>
                 </td>
            </tr>
    </xsl:template>
@@ -78,11 +96,14 @@
    </xsl:template>
 
    <xsl:template match="Critique">
+       
         <xsl:if test="./Note >= 2.5 ">
-            <xsl:value-of select="./Media"/>
+            <div class="aime">
+               <xsl:value-of select="./Media"/>
+            </div>
             <!-- Possible aussi de revenir en arrière avec ../Media en étant dans le match Critique/Note -->
         </xsl:if>
-
+        
    </xsl:template>
 
 
