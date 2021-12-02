@@ -42,6 +42,7 @@
                 <td><b><xsl:value-of select="./Titre"/></b></td>
                 <td>
                     <xsl:choose>
+                        <!-- &lt; est égal à < -->
                         <xsl:when test="count(./Realisateur) &lt; 3"> 
                             <xsl:apply-templates select="./Realisateur"/>
                         </xsl:when>
