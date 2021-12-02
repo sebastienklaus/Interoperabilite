@@ -78,7 +78,7 @@
    </xsl:template>
 
    <xsl:template match="Critique">
-        <xsl:if test="./Note >= 3 ">
+        <xsl:if test="./Note >= 2.5 ">
             <xsl:value-of select="./Media"/>
             <!-- Possible aussi de revenir en arrière avec ../Media en étant dans le match Critique/Note -->
         </xsl:if>
