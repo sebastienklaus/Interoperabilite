@@ -39,7 +39,10 @@
                     <td><b>Affiche</b></td>
                     <td><b>Critique(<span class="aime">Ils ont aimé</span>)</b></td>
                 </tr>
-                <xsl:apply-templates select="FILMS/Film" mode="Table"/>
+                <xsl:apply-templates select="FILMS/Film" mode="Table">
+                <!-- Pour le sort, on le place dans la balise xslapply-templates du tableau Film, et donc ne s'applique pas à List Film -->
+                    <xsl:sort select="./Titre" order="ascending" data-type="text" />
+                </xsl:apply-templates>
             </tbody>
         </table>
         <xsl:apply-templates select="FILMS/Film" mode="List"/>
@@ -56,7 +59,10 @@
    <xsl:template match="Film" mode="Table">
             <tr>
                 <td><xsl:number value="position()"/>.</td>
-                <td><b><xsl:value-of select="./Titre"/></b></td>
+                <td>
+                    <b></b>
+                    <b><xsl:value-of select="./Titre"/></b>
+                </td>
                 <td>
                     <xsl:choose>
                         <!-- &lt; est égal à < -->
