@@ -39,19 +39,21 @@
                     <td><b>Affiche</b></td>
                     <td><b>Critique(<span class="aime">Ils ont aimé</span>)</b></td>
                 </tr>
-                <xsl:apply-templates /> 
-              </tbody>
-          </table>
+                <xsl:apply-templates select="FILMS/Film" mode="Table"/>
+            </tbody>
+        </table>
+        <xsl:apply-templates select="FILMS/Film" mode="List"/>
+        <!-- <xsl:apply-templates /> -->
       </body>
    </html>
    </xsl:template>
-   
 
-   <xsl:template match="FILMS">
+
+   <!-- <xsl:template match="FILMS">
     <xsl:apply-templates select="Film"/>
-   </xsl:template>
+   </xsl:template> -->
 
-   <xsl:template match="FILMS/Film">
+   <xsl:template match="Film" mode="Table">
             <tr>
                 <td><xsl:number value="position()"/>.</td>
                 <td><b><xsl:value-of select="./Titre"/></b></td>
@@ -59,7 +61,7 @@
                     <xsl:choose>
                         <!-- &lt; est égal à < -->
                         <xsl:when test="count(./Realisateur) &lt; 3"> 
-                            <xsl:apply-templates select="./Realisateur"/>
+                            <xsl:apply-templates select="./Realisateur" mode="RealTable"/>
                         </xsl:when>
                         <xsl:otherwise>
                             <em>Film collectif</em>
@@ -80,30 +82,60 @@
                     </a>
                 </td>
                 <td class="try">
-                    <xsl:apply-templates select="./Critique"/>
+                    <xsl:apply-templates select="./Critique" mode="CritTable"/>
                     <div>
-                        <a href="./critiques.html#{@ID}">Lire les critiques</a>
+                        <a href="#{@ID}">Lire les critiques</a>
                     </div>
                 </td>
            </tr>
    </xsl:template>
 
-   <xsl:template match="Realisateur">
+   <xsl:template match="Realisateur" mode="RealTable">
         <b><xsl:value-of select="./Nom"/></b>
         <xsl:text> </xsl:text>
         <xsl:value-of select="./Prenom"/>
         <br/>
    </xsl:template>
 
-   <xsl:template match="Critique">
-       
+   <xsl:template match="Critique" mode="CritTable">
         <xsl:if test="./Note >= 2.5 ">
             <div class="aime">
                <xsl:value-of select="./Media"/>
             </div>
             <!-- Possible aussi de revenir en arrière avec ../Media en étant dans le match Critique/Note -->
         </xsl:if>
-        
+   </xsl:template>
+
+   <xsl:template match="Film" mode="List">
+            <!-- on crée l'ance avec l'id du film -->
+            <a name="{@ID}"></a>
+            <h1><xsl:value-of select="./Titre"/></h1>
+            <xsl:apply-templates select="./Critique" mode="CritList"/>
+            <p>
+                <font size="3" color="steelblue" face="verdana">
+                    <b><xsl:value-of select="./Critique/Media"/></b>
+                </font>
+                <font size="3" color="steelblue" face="verdana">
+                    (<i><xsl:value-of select="./Critique/Auteur"/></i>)
+                </font>
+                  <div align="justify">
+                    <xsl:value-of select="./Critique/Texte"/>
+                  </div>
+            </p>
+   </xsl:template>
+
+   <xsl:template match="Critique" mode="CritList">
+    <p>
+        <font size="3" color="steelblue" face="verdana">
+            <b><xsl:value-of select="./Media"/></b>
+        </font>
+        <font size="3" color="steelblue" face="verdana">
+            (<i><xsl:value-of select="./Auteur"/></i>)
+        </font>
+          <div align="justify">
+            <xsl:value-of select="./Texte"/>
+          </div>
+    </p>
    </xsl:template>
 
 
