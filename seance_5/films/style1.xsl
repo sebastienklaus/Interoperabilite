@@ -40,8 +40,14 @@
                 <td><xsl:number value="position()"/>.</td>
                 <td><b><xsl:value-of select="./Titre"/></b></td>
                 <td>
-                    <xsl:apply-templates select="./Realisateur"/>
-                    
+                    <xsl:choose>
+                        <xsl:when test="count(./Realisateur) > 3"> 
+                            <xsl:text>Film collectif</xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates select="./Realisateur"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
                 </td>
                 <td><xsl:value-of select="./Pays"/></td>
                 <td><xsl:value-of select="./Genre"/></td>
@@ -60,10 +66,10 @@
    </xsl:template>
 
    <xsl:template match="Realisateur">
-    <b><xsl:value-of select="./Nom"/></b>
-    <xsl:text> </xsl:text>
-    <xsl:value-of select="./Prenom"/>
-    <br/>
+        <b><xsl:value-of select="./Nom"/></b>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="./Prenom"/>
+        <br/>
    </xsl:template>
 
 </xsl:stylesheet>
