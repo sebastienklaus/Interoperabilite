@@ -82,7 +82,7 @@
                 <td class="try">
                     <xsl:apply-templates select="./Critique"/>
                     <div>
-                        <a href="./critiques.html#{@ID}">CRITIQUE</a>
+                        <a href="./critiques.html#{@ID}">Lire les critiques</a>
                     </div>
                 </td>
            </tr>
