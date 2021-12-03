@@ -30,7 +30,6 @@ ids_acteurs IDREFS #IMPLIED>
 <!ELEMENT Scenario     (Nom, Prenom)>
 <!ELEMENT Image        (Nom, Prenom)>
 <!ELEMENT Montage      (Nom, Prenom)>
-<!ELEMENT Acteurs      (Acteur)+ >
 <!ELEMENT Critique     (Media, Auteur, (Note)?, (Titre)?, Texte) >
 <!ELEMENT Resume       ((Titre)?, Texte) >
 <!ELEMENT Genre        (#PCDATA) >
