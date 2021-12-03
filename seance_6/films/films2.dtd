@@ -1,0 +1,48 @@
+<!ELEMENT FILMS (ListeReal, ListeActeurs, ListeFilm) >
+<!-- Description for Realisateur tree-->
+<!ELEMENT ListeReal (Realisateur*)>
+<!ELEMENT Realisateur (Nom, Prenom)>
+<!ATTLIST Realisateur ID ID #REQUIRED>
+
+<!-- Description for Acteurs tree-->
+<!ELEMENT ListeActeurs (Acteur*)>
+<!ELEMENT Acteur (Nom, (Prenom)?)>
+<!ATTLIST Acteur ID ID #REQUIRED>
+
+<!-- Description for Acteurs tree-->
+<!ELEMENT ListeFilm (Film*)>
+<!ELEMENT Film (Titre, (Scenario)*, Genre, Pays, Duree, Resume, (Palmares)*, 
+               (Sortie)?, (Image)*, (Montage)*, (Musique)*, (Producteur)+, Distributeur, (Critique)*)>
+
+<!ATTLIST Film ID ID #REQUIRED
+Langue (fr|uk|vo) #REQUIRED
+Affiche CDATA "none"
+ids_realisateurs IDREFS #IMPLIED
+ids_acteurs IDREFS #IMPLIED>
+
+
+
+<!-- Elements for Realisateur & Acteurs trees-->
+<!ELEMENT Nom          (#PCDATA) >
+<!ELEMENT Prenom       (#PCDATA) >
+
+<!-- Elements for Film tree-->
+<!ELEMENT Scenario     (Nom, Prenom)>
+<!ELEMENT Image        (Nom, Prenom)>
+<!ELEMENT Montage      (Nom, Prenom)>
+<!ELEMENT Acteurs      (Acteur)+ >
+<!ELEMENT Critique     (Media, Auteur, (Note)?, (Titre)?, Texte) >
+<!ELEMENT Resume       ((Titre)?, Texte) >
+<!ELEMENT Genre        (#PCDATA) >
+<!ELEMENT Note         (#PCDATA) >
+<!ELEMENT Media        (#PCDATA) >
+<!ELEMENT Auteur       (#PCDATA) >
+<!ELEMENT Texte        (#PCDATA) >
+<!ELEMENT Pays         (#PCDATA) >
+<!ELEMENT Sortie       (#PCDATA) >
+<!ELEMENT Palmares     (#PCDATA) >
+<!ELEMENT Distributeur (#PCDATA) > 
+<!ELEMENT Producteur   (#PCDATA) >
+<!ELEMENT Titre        (#PCDATA) >
+<!ELEMENT Duree        (#PCDATA) >
+<!ELEMENT Musique      (#PCDATA) >
