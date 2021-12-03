@@ -101,7 +101,7 @@
         <xsl:text> </xsl:text>
         <xsl:choose>
             <xsl:when test="count(../Realisateur) = 2">
-                <xsl:value-of select="substring(./Prenom, 1, 2)"/>
+                <xsl:value-of select="substring(./Prenom, 1, 1)"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="./Prenom"/>
