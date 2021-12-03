@@ -1,0 +1,36 @@
+<!ELEMENT FILMS (Film)* >
+<!ELEMENT Film (Titre, (Realisateur)+, (Scenario)*, Genre, Pays, Duree, Resume, (Acteurs)*, (Palmares)*, 
+               (Sortie)?, (Image)*, (Montage)*, (Musique)*, (Producteur)+, Distributeur, (Critique)*)>
+<!ELEMENT Realisateur  (Nom, Prenom)>
+<!ELEMENT Scenario     (Nom, Prenom)>
+<!ELEMENT Image        (Nom, Prenom)>
+<!ELEMENT Acteur       (Nom, (Prenom)?)>
+<!ELEMENT Montage      (Nom, Prenom)>
+<!ELEMENT Acteurs      (Acteur)+ >
+<!ELEMENT Critique     (Media, Auteur, (Note)?, (Titre)?, Texte) >
+<!ELEMENT Resume       ((Titre)?, Texte) >
+<!ELEMENT Genre        (#PCDATA) >
+<!ELEMENT Note         (#PCDATA) >
+<!ELEMENT Media        (#PCDATA) >
+<!ELEMENT Auteur       (#PCDATA) >
+<!ELEMENT Texte        (#PCDATA) >
+<!ELEMENT Pays         (#PCDATA) >
+<!ELEMENT Sortie       (#PCDATA) >
+<!ELEMENT Palmares     (#PCDATA) >
+<!ELEMENT Distributeur (#PCDATA) > 
+<!ELEMENT Producteur   (#PCDATA) >
+<!ELEMENT Titre        (#PCDATA) >
+<!ELEMENT Duree        (#PCDATA) >
+<!ELEMENT Nom          (#PCDATA) >
+<!ELEMENT Prenom       (#PCDATA) >
+<!ELEMENT Musique      (#PCDATA) >
+
+<!ATTLIST Film 
+                 ID              ID #REQUIRED
+                 Langue (fr|uk|vo)  #REQUIRED
+                 Affiche          CDATA "none">
+<!ATTLIST Realisateur
+                 ID                CDATA #REQUIRED>
+
+<!ATTLIST Acteur
+                 ID              ID #REQUIRED>
