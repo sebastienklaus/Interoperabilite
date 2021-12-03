@@ -3,7 +3,7 @@
 		 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
    <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
 
-   <!-- xsltproc with non_r.xml, this file  -->
+   <!-- xsltproc with non_r.xml, this file & films1.xml  -->
     <xsl:template match="/FILMS">
         <xsl:copy>
             <ListeReal>
