@@ -46,7 +46,6 @@
             </tbody>
         </table>
         <xsl:apply-templates select="FILMS/Film" mode="List"/>
-        <!-- <xsl:apply-templates /> -->
       </body>
    </html>
    </xsl:template>
@@ -99,6 +98,7 @@
    <xsl:template match="Realisateur" mode="RealTable">
         <b><xsl:value-of select="./Nom"/></b>
         <xsl:text> </xsl:text>
+        <!-- condition pour initial du prénom ou non -->
         <xsl:choose>
             <xsl:when test="count(../Realisateur) = 2">
                 <xsl:value-of select="substring(./Prenom, 1, 1)"/>
