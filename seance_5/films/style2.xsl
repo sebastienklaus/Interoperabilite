@@ -64,12 +64,20 @@
                 </td>
                 <td>
                     <xsl:choose>
-                        <!-- &lt; est égal à < -->
-                        <xsl:when test="count(./Realisateur) &lt; 3"> 
-                            <xsl:apply-templates select="./Realisateur" mode="RealTable"/>
+                        <xsl:when test="count(./Realisateur) = 0">
+                            <xsl:apply-templates select="./Realisateur" mode="none_RealTable"/>
                         </xsl:when>
+                        <xsl:when test="count(./Realisateur) = 1">
+                            <xsl:apply-templates select="./Realisateur" mode="just1_RealTable"/>
+                        </xsl:when>
+                        <xsl:when test="count(./Realisateur) = 2">
+                            <em>2 réalisateurs</em> &#129485;&#129485;
+                            <br/>
+                            <xsl:apply-templates select="./Realisateur" mode="exact2_RealTable"/>
+                        </xsl:when>
+                        <!-- &lt; est égal à < -->
                         <xsl:otherwise>
-                            <em>Film collectif</em>
+                            <em>Plusieurs réalisateurs, <br/>c'est un film collectif ! &#127881;</em>
                         </xsl:otherwise>
                     </xsl:choose>
                 </td>
@@ -95,27 +103,34 @@
            </tr>
    </xsl:template>
 
-   <xsl:template match="Realisateur" mode="RealTable">
+   <!-- TEMPLATES FOR REALISATEURS -->
+   <xsl:template match="Realisateur" mode="none_RealTable">
+        <em>Aucun réalisateur ...</em>
+   </xsl:template>
+
+   <xsl:template match="Realisateur" mode="just1_RealTable">
+        <em>Seulement 1 réalisateur ... &#128077;</em>
+        <br/>
         <b><xsl:value-of select="./Nom"/></b>
         <xsl:text> </xsl:text>
-        <!-- condition pour initial du prénom ou non -->
-        <xsl:choose>
-            <xsl:when test="count(../Realisateur) = 2">
-                <xsl:value-of select="substring(./Prenom, 1, 1)"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:value-of select="./Prenom"/>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:value-of select="./Prenom"/>
         <br/>
    </xsl:template>
+
+   <xsl:template match="Realisateur" mode="exact2_RealTable">
+        <b><xsl:value-of select="./Nom"/></b>
+        <xsl:text> </xsl:text>
+        <xsl:value-of select="substring(./Prenom, 1, 1)"/>
+        <br/>
+   </xsl:template>
+
 
    <xsl:template match="Critique" mode="CritTable">
         <xsl:if test="./Note >= 2.5 ">
             <div class="aime">
                <xsl:value-of select="./Media"/>
+               <!-- Possible aussi de revenir en arrière avec ../Media en étant dans le match Critique/Note -->
             </div>
-            <!-- Possible aussi de revenir en arrière avec ../Media en étant dans le match Critique/Note -->
         </xsl:if>
    </xsl:template>
 
