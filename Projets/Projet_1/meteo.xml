@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<!DOCTYPE Previsions SYSTEM "./meteo_nancy.dtd">
+<!DOCTYPE Previsions SYSTEM "./meteo.dtd">
 <Previsions>
     <Heure ID="id_008" Timestamp="2021-11-23 08:00:00">
         <Temperature>273.3 K</Temperature>
