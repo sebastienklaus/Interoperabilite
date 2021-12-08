@@ -1,8 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FILMS>
-  <ListeReal/>
+  <ListeReal>
+    <Realisateur ID="r01">
+	      <Nom>Carles</Nom>
+	      <Prenom>Pierre</Prenom>
+      </Realisateur>
+    <Realisateur ID="r02">
+      <Nom>Makhmalbaf</Nom>
+      <Prenom>Samira </Prenom>
+    </Realisateur>
+    <Realisateur ID="r03">
+      <Nom>Lelouch</Nom>
+      <Prenom>Claude</Prenom>
+    </Realisateur>
+    <Realisateur ID="r04">
+      <Nom>Chahine</Nom>
+      <Prenom>Youssef</Prenom>
+    </Realisateur>
+    <Realisateur ID="r05">
+      <Nom>Tanovic</Nom>
+      <Prenom>Danis</Prenom>
+    </Realisateur>
+    <Realisateur ID="r06">
+      <Nom>Ouedraogo</Nom>
+      <Prenom>Idrissa</Prenom>
+    </Realisateur>
+    <Realisateur ID="r07">
+      <Nom>Loach</Nom>
+      <Prenom>Ken</Prenom>
+    </Realisateur>
+    <Realisateur ID="r08">
+      <Nom>Iñárritu</Nom>
+      <Prenom>Alejandro Gonzáles</Prenom>
+    </Realisateur>
+    <Realisateur ID="r09">
+      <Nom>Gitai</Nom>
+      <Prenom>Amos</Prenom>
+    </Realisateur>
+    <Realisateur ID="r10">
+      <Nom>Nair</Nom>
+      <Prenom>Mira</Prenom>
+    </Realisateur>
+    <Realisateur ID="r11">
+      <Nom>Penn</Nom>
+      <Prenom>Sean</Prenom>
+    </Realisateur>
+    <Realisateur ID="r12">
+      <Nom>Imamura</Nom>
+      <Prenom>Shohei</Prenom>
+    </Realisateur>
+    <Realisateur ID="r13">
+      <Nom>Chaiklin</Nom>
+      <Prenom>Rebecca</Prenom>
+    </Realisateur>
+    <Realisateur ID="r14">
+      <Nom>Leitch</Nom>
+      <Prenom>Donovan</Prenom>
+    </Realisateur>
+    <Realisateur ID="r16">
+      <Nom>Pittard</Nom>
+      <Prenom>Eric</Prenom>
+    </Realisateur>
+    <Realisateur ID="r17">
+      <Nom>Deville</Nom>
+      <Prenom>Michel</Prenom>
+    </Realisateur>
+    <Realisateur ID="r18">
+      <Nom>Greengrass</Nom>
+      <Prenom>Paul</Prenom>
+    </Realisateur>
+  </ListeReal>
+  <ListeActeurs>
+    <Acteur ID="a01">
+	      <Nom>Carles</Nom>
+	      <Prenom>Pierre</Prenom>
+      </Acteur>
+    <Acteur ID="a02">
+        <Nom>Bourdieu</Nom>
+        <Prenom>Pierre</Prenom>
+      </Acteur>
+    <Acteur ID="a03">
+	      <Nom>Schneidermann</Nom>
+	      <Prenom>Daniel</Prenom>
+      </Acteur>
+    <Acteur ID="a04">
+	<Nom> Hoffman</Nom>
+	<Prenom>Philip Seymour</Prenom>
+      </Acteur>
+    <Acteur ID="a05">
+	<Nom>O'Donnell</Nom>
+	<Prenom>Rosie</Prenom>
+      </Acteur>
+    <Acteur ID="a06">
+	<Nom>Chomsky</Nom>
+	<Prenom>Noam</Prenom>
+      </Acteur>
+    <Acteur ID="a07">
+	<Nom> Moore</Nom>
+	<Prenom>Michael</Prenom>
+      </Acteur>
+    <Acteur ID="a08">
+	<Nom>Nader</Nom>
+	<Prenom>Ralph</Prenom>
+      </Acteur>
+    <Acteur ID="a09">
+	<Nom>Compston</Nom>
+	<Prenom>Martin</Prenom>
+      </Acteur>
+    <Acteur ID="a10">
+	<Nom>Ruane</Nom>
+	<Prenom>William</Prenom>
+      </Acteur>
+    <Acteur ID="a11">
+	<Nom>Fulton</Nom>
+	<Prenom>Annmarie</Prenom>
+      </Acteur>
+    <Acteur ID="a12">
+	<Nom>Abercromby</Nom>
+	<Prenom>Michelle</Prenom>
+      </Acteur>
+    <Acteur ID="a13">
+	<Nom>Benfodil</Nom>
+	<Prenom>Farid</Prenom>
+      </Acteur>
+    <Acteur ID="a14">
+	<Nom>Benguella</Nom>
+	<Prenom>Kader</Prenom>
+      </Acteur>
+    <Acteur ID="a15">
+	<Nom>Mekouchech</Nom>
+	<Prenom>Farid</Prenom>
+      </Acteur>
+    <Acteur ID="a16">
+	<Nom>Mekouchech</Nom>
+	<Prenom>Kheira</Prenom>
+      </Acteur>
+    <Acteur ID="a17">
+	<Nom>Zebda</Nom>
+      </Acteur>
+    <Acteur ID="a18"> 
+	<Nom>Abkarian </Nom>
+	<Prenom>Simon</Prenom>
+      </Acteur>
+    <Acteur ID="a19">
+	<Nom>Azabal</Nom>
+	<Prenom>Lubna</Prenom>
+      </Acteur>
+    <Acteur ID="a20">
+	<Nom>Breitman</Nom>
+	<Prenom>Zabou</Prenom>
+      </Acteur>
+    <Acteur ID="a21">
+	<Nom>Courau</Nom>
+	<Prenom>Clotilde</Prenom>
+      </Acteur>
+    <Acteur ID="a22">
+	<Nom>Gayet</Nom>
+	<Prenom>Julie</Prenom>
+      </Acteur>
+    <Acteur ID="a23">
+	<Nom>Merhar</Nom>
+	<Prenom>Stanislas </Prenom>
+      </Acteur>
+    <Acteur ID="a24">
+	<Nom>Podalydès</Nom>
+	<Prenom>Denis</Prenom>
+      </Acteur>
+    <Acteur ID="a25">
+	<Nom>Elbaz</Nom>
+	<Prenom>Vincent</Prenom>
+      </Acteur>
+    <Acteur ID="a26">
+	<Nom>Zidi</Nom>
+	<Prenom>Malik</Prenom>
+      </Acteur>
+    <Acteur ID="a27">
+	<Nom>Nesbitt</Nom>
+	<Prenom>James</Prenom>
+      </Acteur>
+    <Acteur ID="a28">
+	<Nom>Duddy</Nom>
+	<Prenom>Declan</Prenom>
+      </Acteur>
+    <Acteur ID="a29">
+	<Nom>Pigott-Smith</Nom>
+	<Prenom>Tim</Prenom>
+      </Acteur>
+    <Acteur ID="a30">
+	<Nom>Farrell</Nom>
+	<Prenom>Nicholas</Prenom>
+      </Acteur>
+    <Acteur ID="a31">
+	<Nom>McSorley</Nom>
+	<Prenom>Gerard</Prenom>
+      </Acteur>
+    <Acteur ID="a32">
+	<Nom>Clarke</Nom>
+	<Prenom>Kathy Kiera</Prenom>
+      </Acteur>
+  </ListeActeurs>
   <ListeFilm>
-    <Film Realisateurs="r01 ">
+    <Film Realisateurs="r01" Acteurs="a01 a02 a03" ID="f01" Affiche="http://www.homme-moderne.org/enfinpris/images/affiche.gif" Langue="fr">
       <Titre>Enfin pris ?</Titre>
       <Genre>Documentaire</Genre>
       <Pays>France</Pays>
@@ -38,20 +236,6 @@ s'y voir au fond en quête de lui-même. Chez celui qui s'échappe, il y
 a toujours le secret désir d'être pris.
         </Texte>
       </Resume>
-      <Acteurs>
-      <Acteur ID="a01">
-	      <Nom>Carles</Nom>
-	      <Prenom>Pierre</Prenom>
-      </Acteur>
-      <Acteur ID="a02">
-        <Nom>Bourdieu</Nom>
-        <Prenom>Pierre</Prenom>
-      </Acteur>
-      <Acteur ID="a03">
-	      <Nom>Schneidermann</Nom>
-	      <Prenom>Daniel</Prenom>
-      </Acteur>
-    </Acteurs>
       <Image>
       <Nom>Carles</Nom>
       <Prenom>Pierre</Prenom>
@@ -114,7 +298,7 @@ Carles (ils ont coréalisé un documentaire sur la vie des élites en
 </Texte>
     </Critique>
     </Film>
-    <Film Realisateurs="r02 r03 r04 r05 r06 r07 r08 r09 r10 r11 r12 ">
+    <Film Realisateurs="r02 r03 r04 r05 r06 r07 r08 r09 r10 r11 r12" ID="f02" Langue="uk" Affiche="https://m.media-amazon.com/images/M/MV5BMzkxMjI4MjYtNjYzMC00ZTE1LWJlNjAtNWIyYzU3Njc3ODRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg">
       <Titre>11'09''01</Titre>
       <Genre>Retour sur actualité</Genre>
       <Pays>France</Pays>
@@ -207,7 +391,7 @@ sino-japonaise devenu serpent : "il n'y a pas de guerre sainte".
 </Texte>
     </Critique>
     </Film>
-    <Film Realisateurs="r13 r14 ">
+    <Film Realisateurs="r13 r14" Acteurs="a04 a05 a06 a07 a08" ID="f03" Langue="vo" Affiche="https://members.loria.fr/YBoniface/html/xml/file/LastParty2000.jpg">
       <Titre>Last Party 2000</Titre>
       <Genre>Documentaire</Genre>
       <Pays>Américain</Pays>
@@ -221,28 +405,6 @@ régie depuis 8 ans par le parti démocrate. Last Party 2000 retrace
 ce moment unique.
 </Texte>
     </Resume>
-      <Acteurs>
-      <Acteur ID="a04">
-	<Nom> Hoffman</Nom>
-	<Prenom>Philip Seymour</Prenom>
-      </Acteur>
-      <Acteur ID="a05">
-	<Nom>O'Donnell</Nom>
-	<Prenom>Rosie</Prenom>
-      </Acteur>
-      <Acteur ID="a06">
-	<Nom>Chomsky</Nom>
-	<Prenom>Noam</Prenom>
-      </Acteur>
-      <Acteur ID="a07">
-	<Nom> Moore</Nom>
-	<Prenom>Michael</Prenom>
-      </Acteur>
-      <Acteur ID="a08">
-	<Nom>Nader</Nom>
-	<Prenom>Ralph</Prenom>
-      </Acteur>
-    </Acteurs>
       <Montage>
       <Nom>Hoffmann</Nom>
       <Prenom>Sabine</Prenom>
@@ -330,7 +492,7 @@ candidats, mais il le fait relativement bien.
 </Texte>
     </Critique>
     </Film>
-    <Film Realisateurs="r07 ">
+    <Film Realisateurs="r07" Acteurs="a09 a10 a11 a12" ID="f04" Langue="uk" Affiche="https://www.les400coups.org/affiches/bigger/sweetsixteen.jpg">
       <Titre>Sweet Sixteen</Titre>
       <Scenario>
       <Nom>Laverty</Nom>
@@ -356,24 +518,6 @@ la situation devient grave et qu'il perd pied. Il faudrait partir mais
 peut-être est-il déjà trop tard.
 </Texte>
     </Resume>
-      <Acteurs>
-      <Acteur ID="a09">
-	<Nom>Compston</Nom>
-	<Prenom>Martin</Prenom>
-      </Acteur>
-      <Acteur ID="a10">
-	<Nom>Ruane</Nom>
-	<Prenom>William</Prenom>
-      </Acteur>
-      <Acteur ID="a11">
-	<Nom>Fulton</Nom>
-	<Prenom>Annmarie</Prenom>
-      </Acteur>
-      <Acteur ID="a12">
-	<Nom>Abercromby</Nom>
-	<Prenom>Michelle</Prenom>
-      </Acteur>
-    </Acteurs>
       <Palmares>meilleur scénario au 55ème Festival de Cannes</Palmares>
       <Image>
       <Nom>Ackroyd</Nom>
@@ -457,7 +601,7 @@ bouleversante.
 </Texte>
     </Critique>
     </Film>
-    <Film Realisateurs="r16 ">
+    <Film Realisateurs="r16" Acteurs="a13 a14 a15 a16 a17" ID="f05" Langue="fr" Affiche="http://fr.web.img5.acsta.net/c_215_290/medias/nmedia/00/02/54/16/affiche.jpg">
       <Titre>Le bruit, l'odeur et quelques étoiles</Titre>
       <Genre>Drame</Genre>
       <Pays>France</Pays>
@@ -471,27 +615,6 @@ tenues, ils entrent dans une spirale de folie qui va les conduire de
 la cité à la prison.
 </Texte>
     </Resume>
-      <Acteurs>
-      <Acteur ID="a13">
-	<Nom>Benfodil</Nom>
-	<Prenom>Farid</Prenom>
-      </Acteur>
-      <Acteur ID="a14">
-	<Nom>Benguella</Nom>
-	<Prenom>Kader</Prenom>
-      </Acteur>
-      <Acteur ID="a15">
-	<Nom>Mekouchech</Nom>
-	<Prenom>Farid</Prenom>
-      </Acteur>
-      <Acteur ID="a16">
-	<Nom>Mekouchech</Nom>
-	<Prenom>Kheira</Prenom>
-      </Acteur>
-      <Acteur ID="a17">
-	<Nom>Zebda</Nom>
-      </Acteur>
-    </Acteurs>
       <Sortie>20/11/2002</Sortie>
       <Musique>Zebda</Musique>
       <Producteur>Les Films d'Ici</Producteur>
@@ -527,7 +650,7 @@ magnifiques flashs immobiles.
 </Texte>
     </Critique>
     </Film>
-    <Film Realisateurs="r17 ">
+    <Film Realisateurs="r17" Acteurs="a18 a19 a20 a21 a22 a23 a24 a25 a26" ID="f06" Langue="fr" Affiche="https://www.picclickimg.com/d/w1600/pict/353253428124_/AFFICHE-Un-Monde-Presque-Paisible-116x158cm.jpg">
       <Titre>Un monde presque paisible </Titre>
       <Scenario>
       <Nom>Deville</Nom>
@@ -552,44 +675,6 @@ la fantaisie, de la légèreté. Ce sont des gens ordinaires, ce sont des
 gens admirables.
 </Texte>
     </Resume>
-      <Acteurs>
-      <Acteur ID="a18"> 
-	<Nom>Abkarian </Nom>
-	<Prenom>Simon</Prenom>
-      </Acteur>
-      <Acteur ID="a19">
-	<Nom>Azabal</Nom>
-	<Prenom>Lubna</Prenom>
-      </Acteur>
-      <Acteur ID="a20">
-	<Nom>Breitman</Nom>
-	<Prenom>Zabou</Prenom>
-      </Acteur>
-      <Acteur ID="a21">
-	<Nom>Courau</Nom>
-	<Prenom>Clotilde</Prenom>
-      </Acteur>
-      <Acteur ID="a22">
-	<Nom>Gayet</Nom>
-	<Prenom>Julie</Prenom>
-      </Acteur>
-      <Acteur ID="a23">
-	<Nom>Merhar</Nom>
-	<Prenom>Stanislas </Prenom>
-      </Acteur>
-      <Acteur ID="a24">
-	<Nom>Podalydès</Nom>
-	<Prenom>Denis</Prenom>
-      </Acteur>
-      <Acteur ID="a25">
-	<Nom>Elbaz</Nom>
-	<Prenom>Vincent</Prenom>
-      </Acteur>
-      <Acteur ID="a26">
-	<Nom>Zidi</Nom>
-	<Prenom>Malik</Prenom>
-      </Acteur>
-    </Acteurs>
       <Palmares>Compétition Officielle Festival de Venise 2002</Palmares>
       <Image>
       <Nom>Diot</Nom>
@@ -658,7 +743,7 @@ derrière une harmonie apparente, cessé de s'aimer.
 </Texte>
     </Critique>
     </Film>
-    <Film Realisateurs="r18 ">
+    <Film Realisateurs="r18" Acteurs="a27 a28 a29 a30 a31 a32" ID="f07" Langue="uk" Affiche="https://fr.web.img6.acsta.net/r_1920_1080/medias/nmedia/00/02/53/19/affiche.jpg">
       <Titre>Bloody Sunday</Titre>
       <Scenario>
       <Nom>Greengrass</Nom>
@@ -680,32 +765,6 @@ par l'armée. Cette journée, désormais inscrite dans l'Histoire sous le
 nom de Bloody Sunday, marque le début de la guerre civile.
 </Texte>
     </Resume>
-      <Acteurs>
-      <Acteur ID="a27">
-	<Nom>Nesbitt</Nom>
-	<Prenom>James</Prenom>
-      </Acteur>
-      <Acteur ID="a28">
-	<Nom>Duddy</Nom>
-	<Prenom>Declan</Prenom>
-      </Acteur>
-      <Acteur ID="a29">
-	<Nom>Pigott-Smith</Nom>
-	<Prenom>Tim</Prenom>
-      </Acteur>
-      <Acteur ID="a30">
-	<Nom>Farrell</Nom>
-	<Prenom>Nicholas</Prenom>
-      </Acteur>
-      <Acteur ID="a31">
-	<Nom>McSorley</Nom>
-	<Prenom>Gerard</Prenom>
-      </Acteur>
-      <Acteur ID="a32">
-	<Nom>Clarke</Nom>
-	<Prenom>Kathy Kiera</Prenom>
-      </Acteur>
-    </Acteurs>
       <Palmares>Ours d'or au Festival de Berlin 2002</Palmares>
       <Image>
       <Nom>Strasburg</Nom>

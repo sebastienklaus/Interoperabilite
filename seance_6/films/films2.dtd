@@ -1,11 +1,11 @@
 <!ELEMENT FILMS (ListeReal, ListeActeurs, ListeFilm) >
 <!-- Description for Realisateur tree-->
-<!ELEMENT ListeReal (Realisateur*)>
+<!ELEMENT ListeReal (Realisateur)*>
 <!ELEMENT Realisateur (Nom, Prenom)>
 <!ATTLIST Realisateur ID ID #REQUIRED>
 
 <!-- Description for Acteurs tree-->
-<!ELEMENT ListeActeurs (Acteur*)>
+<!ELEMENT ListeActeurs (Acteur)*>
 <!ELEMENT Acteur (Nom, (Prenom)?)>
 <!ATTLIST Acteur ID ID #REQUIRED>
 
@@ -17,8 +17,8 @@
 <!ATTLIST Film ID ID #REQUIRED
 Langue (fr|uk|vo) #REQUIRED
 Affiche CDATA "none"
-ids_realisateurs IDREFS #IMPLIED
-ids_acteurs IDREFS #IMPLIED>
+Realisateurs IDREFS #REQUIRED
+Acteurs IDREFS #IMPLIED>
 
 
 

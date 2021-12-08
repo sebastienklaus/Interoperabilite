@@ -1,5 +1,5 @@
 <!ELEMENT FILMS (Film)* >
-<!ELEMENT Film (Titre, (Realisateur)+, (Scenario)*, Genre, Pays, Duree, Resume, (Acteurs)*, (Palmares)*, 
+<!ELEMENT Film (Titre, (Realisateur)+, Scenario*, Genre, Pays, Duree, Resume, (Acteurs)*, (Palmares)*, 
                (Sortie)?, (Image)*, (Montage)*, (Musique)*, (Producteur)+, Distributeur, (Critique)*)>
 <!ELEMENT Realisateur  (Nom, Prenom)>
 <!ELEMENT Scenario     (Nom, Prenom)>
